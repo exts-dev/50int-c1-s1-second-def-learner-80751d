@@ -1,0 +1,515 @@
+/* Style sheet for Animal Farm */
+
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Open Sans', sans-serif; */
+/*font-family: 'Open Sans Condensed', sans-serif; */
+
+body {
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 1495px;
+  font-size: 100%;
+  color: black;
+  background-color: #F5F5F5;
+  font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 1.0em; /*16px;*/
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 2.25em; /*36px;*/
+}
+
+h2 {
+ font-size: 1.875em; /* 30px */
+}
+
+header {
+  display: flex;
+  height: 100px;
+  padding: 0px 10%;
+  background-color: #FFFFFF;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.logo-container{
+  display: flex;
+  align-self: center;
+  flex: 1 0 50%
+}
+
+nav {
+  flex: 1 0 50%;
+  align-self: center;
+  text-align: center;
+}
+
+nav a {
+  color: #232323;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  padding: 0px 5px;
+  margin: 5px;
+}
+
+nav a.current {
+  color: #FF3052;
+  border: 1px solid;
+}
+
+nav a:hover,
+nav a:focus {
+  border: 1px solid;
+}
+
+.logo {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.logo a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.logo p:first-child {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #232323;
+  font-size: 2.6em;
+  font-weight: 100;
+  line-height: 0.6;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo p:last-child {
+  font-family: 'Playfair Display', serif;
+  color: #232323;
+  font-size: 2.6em;
+  font-weight: 700;
+  line-height: 1.0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #FFFFFF;
+  padding: 70px 10%;
+}
+
+aside {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; /* must for home gallery !!*/
+  justify-content: center;
+  background-color: #F5F5F5; /* white */
+  padding: 70px 10%;
+}
+
+.banner-container {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+
+.banner-container img {
+  /*height: 100%;*/
+  width: 100%;
+}
+
+.banner-title {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  color: #F5F5F5; /* white */
+  background-color: #232323;
+}
+
+.spread,
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px;
+}
+/* End Global */
+
+/* Start Index Page - Start Banner */
+.bg-image-2 {
+    background: #ffd166 url(assets/owl.jpg) no-repeat;
+    background-position: 25% 75%;
+    background-size: cover;
+    height:700px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.block-wrapper {
+  background: rgba(255, 255, 255, 0.4);
+  width: 625px;
+  height: 310px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block {
+  width: 430px;
+  height: 250px;
+  color: #232323; /*black;*/
+  border: 1px solid;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 30px 30px 30px 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#top {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 37px;
+  line-height: 1.0;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#middle {
+  font-family: 'Playfair Display', serif;
+  line-height: 0.8;
+  font-size: 160px;
+  margin: 0px;
+}
+
+#bottom {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 1.0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+#bottom p {
+  margin: 0;
+}
+
+#bottom a{
+  color: #FF3052; /*red;*/
+}
+/* End Banner */
+
+/* Start Main-text */
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 400px;
+  flex: 1 0 50%;
+  justify-content: space-between;
+}
+
+.column p {
+  margin: 0 0 20px 0;
+}
+
+#col-1 {
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+#col-1 h1 {
+  color: #FF3052; /*red;*/
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+/* End Main-text */
+
+/* Start Aside */
+.spread img {
+  height: 100%;
+  width: 100%;
+  min-width: 300px;
+  flex: 1 0 50%;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.message-container {
+  min-width: 300px;
+  display: flex;
+  flex: 1 0 50%;
+  padding: 0px;
+  margin: 0;
+  position: relative;
+}
+
+.message-container img {
+  margin: 0;
+  padding: 6px;
+}
+
+.message-box {
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0px;
+  margin: 0 auto;
+  background: rgba(255, 128, 128, 0.3);
+}
+
+.message-box h1 {
+  margin-bottom: 12px;
+}
+.message-box a {
+  color: white;
+  text-decoration: none;
+  padding: 1px 3px;;
+  border: 1px solid;
+}
+/* End Aside - End Index Page */
+
+/* Start About Page - Banner */
+.bg-image-1 {
+  background: #ffd166 url(assets/running-dogs.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 627px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.link-box{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #232323; /*black;*/
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.link-box a {
+  display: flex;
+  flex-flow: row nowrap;
+  color: #434343; /* gray */
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px 10px;
+}
+
+.link-box h1 {
+  font-size: 3.0vw;
+  margin: 0;
+}
+
+.link-box a.current {
+    color: #F5F5F5; /* white */
+}
+
+.link-box a:hover,
+.link-box a:focus {
+  color: #FF3052; /*red;*/
+}
+/* End Banner - Start Main Content */
+
+/* Start Text Content */
+.must-flex {
+  max-width: 650px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  flex: 1 0 60%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.text1 {
+padding-right: 40px;
+}
+
+.text1 p {
+  margin: 0px;
+}
+
+.text1 h3 {
+  margin-top: 0px;
+}
+
+.text2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  margin-right: 20px;
+  }
+
+.text2 p {
+  margin: 0px;
+}
+
+blockquote {
+  margin: 0px 0px 0px 5px;
+}
+
+.bottom-margin {
+  padding-bottom: 15px;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px 20px;
+}
+
+.table {
+  min-width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+/* End Text - Start extra Image Content */
+.main-image-container {
+  min-width: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex: 1 0 40%;
+  box-sizing: border-box;
+}
+
+.main-image-container img {
+  /*height: 100%;*/
+  width: 100%;
+}
+
+.book-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #FF3052; /* red */
+  margin-top: 40px;
+}
+
+.book-link a {
+  padding: 0px 20px;
+  color: #F5F5F5; /* white */
+  background-color: #FF3052; /* red */
+  text-decoration: none;
+  margin: 0;
+}
+
+.book-link h2 {
+  margin: 18px 0px;
+}
+
+.book-link a.current{
+  background-color: #FF3052; /* red */
+}
+
+.book-link a:hover,
+.book-link a:focus {
+  background-color: #232323; /* black */
+}
+/* End Image - End About Page */
+
+/* Start Adoption Page */
+.txt-1 p {
+  margin: 0px;
+}
+
+.txt-1 p:nth-child(2) {
+  margin: 10px 0px;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 198px;
+  background-color: white;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* End Adoption Page */
+
+/* Start Footer */
+.wrapper-foot {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+footer p,
+footer ul {
+  min-width: 330px;
+  text-align: center;
+  padding: 5px 0px 0px 0px;
+  margin: 0 auto;
+}
+
+footer li {
+  display: inline-block;
+  list-style: none;
+}
+
+footer a {
+  color: #232323; /*black;*/
+  background-color: #F5F5F5; /* white */
+  padding: 3px;
+  margin: 0px 3px;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content:flex-end;
+  background: #232323; /*black;*/
+  color:#F5F5F5; /* white */
+  padding: 25px;
+}
+/* -------------------------- */
